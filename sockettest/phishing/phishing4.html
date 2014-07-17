@@ -1,0 +1,94 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<title>
+    13°盒子提醒您: 您要访问的是一个钓鱼网站!
+</title>
+<style>
+html {width: 100%; height: 100%;}
+body {font:12px/1.5 arial,helvetica,sans-serif;text-align:center;color: #333;background: #FFF; width: 100%; height: 100%; overflow:auto; position:relative;}
+a{color:#2c96e2;text-decoration:none;}
+a:hover,
+a:active,
+a:focus{color:#2c96e2;text-decoration:underline;}
+.mark {color: #f00;}
+.mod-warn-full {height:200px; color:#fff; background: url(./bg_full.png) repeat-x 0 0;}
+.mod-warn-full .content {width: 960px; margin: auto; padding-top: 10px; text-align: left;}
+.mod-warn-full .bd {background: url(./bg_line_y.png) no-repeat 363px 0;}
+.mod-warn-full .false {width: 363px; float: left; margin-right: 16px; background: url(./ico_warn.png) no-repeat 0 5px;}
+.mod-warn-full .false h3 { font-size: 24px; padding-left: 50px; font-weight: normal;}
+.mod-warn-full .false .p1 { padding-left: 50px; padding-bottom: 25px; color: #ffc9bf;}
+.mod-warn-full .true {float: left; width: 385px;}
+.mod-warn-full .true .p2 {padding-top: 10px;}
+.mod-warn-full .true .p2,
+.mod-warn-full .true .p3 {color: #fed387;}
+.mod-warn-full .true .p2 a,
+.mod-warn-full .true .p3 a {color: #fed387;}
+.mod-warn-full .true .p3 {text-align: right;}
+.mod-warn-full .true .p3 a {display: inline-block; *display: inline; zoom:1; vertical-align: middle; margin-left: 15px;}
+.mod-warn-full .true .p3 a.bt-gourl {display: inline-block; *display: inline; zoom:1; width: 91px; height: 32px;
+    font-size:12px; color:#893400; line-height:32px; text-align:center;
+ background: url(./spr_all.png) no-repeat 0 -121px;}
+.mod-warn-full .true .p3 a.bt-gourl,
+.mod-warn-full .true .p3 a.bt-gourl:hover {
+    text-decoration:none;
+}
+.mod-warn {width: 602px; text-align: left; position: absolute; left: 50%; top: 50%; margin:-155px 0 0 -301px; background: #fff;}
+.mod-warn .hd {height: 111px; background: url(./spr_all.png) no-repeat 0 0; overflow:hidden;}
+.mod-warn .hd h1 {height: 42px; margin:7px 0 0 10px; color:#ffb2b2; font-size:12px; line-height:21px;}
+.mod-warn .hd h1 i { display:inline-block; _display:inline; _zoom:1; height: 16px; width: 16px; margin-right:5px; margin-top:-3px; background: url(../images/logo.png) no-repeat 0 0; vertical-align: middle;}
+.mod-warn .hd h1 b { color: #fff;}
+.mod-warn .hd h3 {padding: 0px 0 0 102px; font-size: 24px; font-family: 'Mircrosoft YaHei'; font-weight: normal; color: #fff;}
+.mod-warn .bd {border: 1px solid #a70c00; border-width: 0 1px; padding: 15px 35px 0; line-height: 1.8; color: #474747;}
+.mod-warn .bd .p2 {color:#999; margin-top: 23px;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;}
+.mod-warn .bd .p3 {color:#278c19;}
+.mod-warn .bd .p3 a {color:#278c19;}
+.mod-warn .bd .p4 {text-align: right; padding-top: 15px;}
+.mod-warn .bd .p4 a {display: inline-block; *display: inline; zoom:1; vertical-align: middle; margin-left: 15px;}
+.mod-warn .bt-gourl {display: inline-block; *display: inline; zoom:1;  vertical-align: middle; width: 91px; height: 32px;  text-align:center; font-size:12px; color:#fff;
+    line-height:32px;
+    background: url(./spr_all.png) no-repeat 0 -163px;}
+.mod-warn .bt-gourl,
+.mod-warn .bt-gourl:hover { text-decoration:none;}
+.mod-warn .ft {border: 1px solid #a70c00; border-width: 0 1px 1px; padding: 20px 21px 11px;}
+.mod-warn .ft .lnk {float: left; color: #2c96e2;}
+.mod-warn .ft .lnk b { color:#008000; font-weight: bolder;}
+.mod-warn .ft .share {float: right; padding-top: 2px;}
+.mod-warn .ft .share .ico {display: block; width: 16px; height: 16px; text-indent: -999em; background: url(./spr_all.png) no-repeat 0 -205px;}
+
+</style>
+</head>
+<body>
+<div class="wrap " style="margin-left: -320px; left: 50%; margin-top: -155px; top: 50%;">
+<div class="mod-warn">
+	<div class="hd">
+                    <h1><b>13°盒子</b>提醒您</h1>
+        		<h3>钓鱼网站</h3>
+	</div>
+	<div class="bd">
+		<p class="p1">此网站在13°盒子的钓鱼网址黑名单中，可能会骗取您的账号和密码，对您的网络安全产生威胁，我们已经阻止了您的访问。如果您信任此网址，您可以在13°盒子&gt;白名单、黑名单列表里进行添加和移除。</p>
+		<p id="show_card" class="p2" style="visibility: hidden;"><span id="dgurl"></span></p>
+		<p class="p3">
+                    </p>
+		<p class="p4" style="
+    margin-bottom: 00px;
+">
+            
+         <a id="c" class="bt-gourl" href="javascript:closeWindow();">关闭页面</a>
+                                         
+        </p>
+	</div>
+	<div class="ft clearfix">
+		
+		
+	</div>
+</div>
+</div>
+
+
+<script>
+   function closeWindow(){
+    window.opener=null; 
+    window.open('','_self'); 
+    window.close(); 
+}
+</script></body></html>
